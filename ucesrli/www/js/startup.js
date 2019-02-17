@@ -16,5 +16,5 @@ function showPosition(position) {
 }
 function trackAndCircle() {
 	var point;
-	point = showPosition()
+	point = trackLocation()
 }
