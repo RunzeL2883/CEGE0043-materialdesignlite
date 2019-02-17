@@ -13,7 +13,7 @@ function showPosition(position) {
 	}
 	userMarker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(mymap).bindPopup("<b>You were here</b>");
 	document.getElementById('showLocation').innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
-	getDistance()
+	getDistance();
 }
 function getDistance() {
 	alert('getting distance');
