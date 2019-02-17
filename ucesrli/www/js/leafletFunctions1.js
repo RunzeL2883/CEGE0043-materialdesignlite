@@ -19,3 +19,4 @@ function earthquakeResponse() {
     var earthquakedata = client.responseText;
     loadEarthquakelayer(earthquakedata);
 }
+}
