@@ -38,6 +38,11 @@ function showPosition(position) {
 	document.getElementById('showLocation').innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
 }
 function trackAndCircle() {
-	var PointLinePoly = addPointLinePoly();
-	var track = trackLocation();
+	addPointLinePoly();
+	trackLocation();
+}
+function startup() {
+	document.addEventListener('DOMContentLoaded', function() {
+		trackAndCircle ();
+	}, false);
 }
