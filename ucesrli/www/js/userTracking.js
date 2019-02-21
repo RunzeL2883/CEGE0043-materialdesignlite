@@ -18,7 +18,7 @@ function showPosition(position) {
 function getDistance() {
 	alert('getting distance');
 	// getDistanceFromPoint is the function called once the distance has been found
-	navigator.geolocation.watchPosition(getDistanceFromPoint);
+	navigator.geolocation.getCurrentPosition(getDistanceFromPoint);
 }
 function getDistanceFromPoint(position) {
     // find the coordinates of a point using this website:
