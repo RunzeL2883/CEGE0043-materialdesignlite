@@ -5,6 +5,7 @@ function trackLocation() {
 	else {
 		document.getElementById('showLocation').innerHTML = "Geolocation is not supported by this browser.";
 	}
+	alert("tracklocation")
 }
 var userMarker;
 function showPosition(position) {
@@ -15,7 +16,6 @@ function showPosition(position) {
 	userMarker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(mymap).bindPopup("<b>You were here</b>");
 	alert("step 2");
 	document.getElementById('showLocation').innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
-	alert("step 3");
 	getDistance();
 	alert("step 4");
 }
