@@ -1,11 +1,11 @@
 function trackLocation() {
+	alert("alert");
 	if (navigator.geolocation) {
 		navigator.geolocation.watchPosition(showPosition);
 	}
 	else {
 		document.getElementById('showLocation').innerHTML = "Geolocation is not supported by this browser.";
 	}
-	alert("tracklocation")
 }
 var userMarker;
 function showPosition(position) {
