@@ -11,12 +11,13 @@ function showPosition(position) {
 	if (userMarker){
 		mymap.removeLayer(userMarker);
 	}
+	alert("step 1");
 	userMarker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(mymap).bindPopup("<b>You were here</b>");
-	alert("step 1")
+	alert("step 2");
 	document.getElementById('showLocation').innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
-	alert("step 2")
+	alert("step 3");
 	getDistance();
-	alert("step 3")
+	alert("step 4");
 }
 function getDistance() {
 	alert('getting distance');
