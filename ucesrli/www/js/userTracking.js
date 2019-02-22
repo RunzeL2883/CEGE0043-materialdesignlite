@@ -6,6 +6,7 @@ function trackLocation() {
 	else {
 		document.getElementById('showLocation').innerHTML = "Geolocation is not supported by this browser.";
 	}
+	alert("finish function trackLocation")
 }
 var userMarker;
 function showPosition(position) {
