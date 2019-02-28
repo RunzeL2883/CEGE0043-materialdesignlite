@@ -78,4 +78,3 @@ function getDistanceFromMultiplePoints(position) {
 		}
 	}
 	alert("Earthquake: " + closestQuake + " is distance " + minDistance + "away");
-}
